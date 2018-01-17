@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+fog:
+  user:
+    name: fog
+    uid: 2005
+    home: /home/fog
+  group:
+    name: fog
+    gid: 2005
+  pkg: fog
+  install_dir: /home/fog/base
+  config:
+    location: /home/fog/www/lib/fog/config.class.php
+    database_host: 127.0.0.1
+    database_name: fog
+    database_username: fog
+    database_password: fog
+    interface: eth0
+    ipaddress: 127.0.0.1
+    username: fog
+    password: fog
+    storage_location: /images
+    storage_location_capture: /images/dev
+    snapindir: /opt/fog/snapins
+    webroot: /home/fog/www/fog
+
+  service:
+    name: fog
