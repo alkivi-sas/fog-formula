@@ -11,7 +11,6 @@ fog:
   pkg: fog
   install_dir: /home/fog/base
   config:
-    location: /home/fog/www/lib/fog/config.class.php
     database_host: 127.0.0.1
     database_name: fog
     database_username: fog

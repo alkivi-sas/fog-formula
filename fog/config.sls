@@ -12,7 +12,7 @@ fog-webroot:
 
 fog-config:
   file.managed:
-    - name: {{ fog.config.location }}
+    - name: {{ fog.config.webroot }}/lib/fog/config.class.php
     - source: salt://fog/templates/config.class.php.jinja
     - template: jinja
     - mode: 640
