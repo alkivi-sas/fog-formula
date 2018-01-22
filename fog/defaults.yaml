@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 fog:
+  version: 1.4.4
+  client_version: 0.11.12
   user:
     name: fog
     uid: 2005

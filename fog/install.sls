@@ -10,6 +10,6 @@ fog-git:
   git.latest:
     - name: https://github.com/fogproject/fogproject.git
     - user: {{ fog.user.name }}
-    - rev: 1.4.4
+    - rev: {{ fog.version }}
     - target: {{ fog.install_dir }}
     - force_reset: True

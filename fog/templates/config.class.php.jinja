@@ -56,7 +56,7 @@ class Config
      */
     private static function _svcSetting()
     {
-        define('UDPSENDERPATH', '/usr/local/sbin/udp-sender');
+        define('UDPSENDERPATH', '{{ config.get('udp_sender_path', '/usr/bin/udp-sender') }}');
         define('MULTICASTINTERFACE', '{{ config.get('interface') }}');
         define('UDPSENDER_MAXWAIT', null);
     }
