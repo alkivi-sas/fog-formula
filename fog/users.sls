@@ -16,4 +16,4 @@ fog_user:
     - home: {{ fog.user.home }}
     - uid: {{ fog.user.uid }}
     - gid: {{ fog.group.gid }}
-    - password: {{ salt['alkivi.password']('fog', type='user') }}
+    - password: {{ salt['alkivi.password_hash']('fog') }}
