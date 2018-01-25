@@ -9,6 +9,7 @@ fog-webroot:
     - source: {{ fog.install_dir }}/packages/web
     - user: {{ fog.user.name }}
     - group: {{ fog.group.name }}
+    - makedirs: True
 
 fog-config:
   file.managed:
