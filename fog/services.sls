@@ -4,7 +4,8 @@
 {% from "fog/map.jinja" import fog with context %}
 
 /opt/fog/log:
-  file.directory
+  file.directory:
+    - makedirs: True
 
 {% set service_dir = fog.install_dir ~ '/packages/service' %}
 /opt/fog/service:
