@@ -5,11 +5,11 @@ fog:
   client_version: 0.11.12
   user:
     name: fog
-    uid: 2005
+    uid: 1905
     home: /home/fog
   group:
     name: fog
-    gid: 2005
+    gid: 1905
   pkg: fog
   install_dir: /home/fog/base
   config:

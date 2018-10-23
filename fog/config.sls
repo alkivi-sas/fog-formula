@@ -11,6 +11,20 @@ fog-webroot:
     - group: {{ fog.group.name }}
     - makedirs: True
 
+fog-webroot-perms:
+  file.directory:
+    - name: {{ fog.config.webroot }}
+    - user: {{ fog.user.name }}
+    - group: {{ fog.group.name }}
+    - dir_mode: 755
+    - file_mode: 644
+    - recurse:
+      - user
+      - group
+      - mode
+    - require:
+      - file: fog-webroot
+
 fog-config:
   file.managed:
     - name: {{ fog.config.webroot }}/lib/fog/config.class.php
@@ -21,3 +35,5 @@ fog-config:
     - group: {{ fog.group.name }}
     - context:
       config: {{ fog.config }}
+    - require:
+      - file: fog-webroot
